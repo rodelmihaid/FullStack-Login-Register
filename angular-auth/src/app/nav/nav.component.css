@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: graphik-medium;
+  font-weight: 600;
+  margin-top: -3rem;
+}
+.point {
+  list-style: none;
+}
+.wrapperList {
+  margin: 0;
+  padding-top: 1%;
+}
+.wrapperList li {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+.wrapperList li a {
+  padding: 10px;
+  display: block;
+  color: #dc0028 !important;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #a2bf6c;
+  border-radius: 50%;
+  animation: flicker 1s infinite alternate;
+  margin-top: 18px;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="container">
+  <div>
+    <mat-icon
+      svgIcon="logo"
+      style="height: 200px; width: 200px; left: 10px"
+      (click)="onHomePage()"
+    ></mat-icon>
+  </div>
+  <div>
+    <ul class="wrapperList">
+      <li class="dot"></li>
+      <li>
+        <a id="popUp">Contact Center 0748 517 213 </a>
+      </li>
+      <li class="point">
+        <a href="/shoppingcart" style="text-decoration: none"
+          >Cos de cumparaturi</a
+        >
+      </li>
+      <li class="point">
+        <div *ngIf="!authenticated">
+          <a href="/login" style="text-decoration: none"> Intra in cont</a>
+        </div>
+        <div *ngIf="authenticated">
+          <a href="/dashboard" style="text-decoration: none"> Contul meu</a>
+        </div>
+      </li>
+      <li class="point">
+        <a><mat-icon class="personSimbol">person_outline</mat-icon></a>
+      </li>
+    </ul>
+  </div>
+</div>
